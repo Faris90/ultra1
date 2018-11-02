@@ -1183,7 +1183,7 @@ GameServer.prototype.getStats = function () {
     this.stats = JSON.stringify(s);
 };
 
-// Pings the server tracker, should be called every 30 seconds
+// Pings the server tracker, should be called every 30 secondss
 // To list us on the server tracker located at http://ogar.mivabe.nl/master
 GameServer.prototype.pingServerTracker = function () {
     // Get server statistics
