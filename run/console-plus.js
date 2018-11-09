@@ -176,7 +176,7 @@ const config = require('./console-plus.json');
         perMessageDeflate: false,
         maxPayload: 4096,
         protocolVersion: 8,
-        origin:'http://' + config.ip + ':' +  $PORT,
+        origin:'http://' + config.ip + ':' +  config.port,
         autoAcceptConnections: false
     };
 
