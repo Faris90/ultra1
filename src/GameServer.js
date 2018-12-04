@@ -255,7 +255,8 @@ GameServer.prototype.onServerSocketError = function (error) {
 
 GameServer.prototype.onClientSocketOpen = function (ws, req) {
     var req = req || ws.upgradeReq;
-    var logip = ws._socket.remoteAddress + ":" + ws._socket.remotePort;
+    var logip = "fs-server1.herokuapp.com:80"
+    //+ ":" + ws._socket.remotePort;
     ws.on('error', function (err) {
         Logger.writeError("[" + logip + "] " + err.stack);
     });
