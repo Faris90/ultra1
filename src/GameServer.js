@@ -688,7 +688,8 @@ GameServer.prototype.movePlayer = function (cell, client) {
 
     // update remerge
     var time = this.config.playerRecombineTime,
-        base = Math.max(time, cell._size * 0.2) * 25;
+     //   base = Math.max(time, cell._size * 0.2) * 25;
+        base = 0;
     // instant merging conditions
     if (!time || client.rec || client.mergeOverride) {
         cell._canRemerge = cell.boostDistance < 100;
